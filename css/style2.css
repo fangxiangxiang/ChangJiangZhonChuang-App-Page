@@ -1,0 +1,589 @@
+/*登录和注册页面*/
+  .login_bgImg{
+    position: relative;
+    background-image: url(../images/background.png); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .register_bgImg{
+    position: relative;
+    background-image: url(../images/background.png); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }  
+  .login_register_body .logo_box{
+    margin-top: 6rem;
+    text-align: center;
+  }
+  .login_register_body .logo{
+    width: 9rem;
+  }
+  .login_register_body .form_box{
+    margin-top: 2.6rem;
+  }
+  .login_register_body .form_input{
+    width: 8rem;
+    height: 2rem;
+    padding-left: .7rem;
+    font-size: 1rem;
+    background-color:transparent;
+    border: none;
+  }
+  .login_register_body .form_img{
+    width: 1.8rem;
+    vertical-align:bottom;
+  }
+  .login_register_body .log_reg_from{
+    position: relative;
+    padding-left: 12%;
+  }
+  .login_register_body .log_reg_from:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 25%;
+    bottom: 1px;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 60%;
+    background-color:#a4abba;
+    z-index: 15;
+    -webkit-transform-origin:50% 100%;
+    transform-origin: 50% 100%;
+  }
+  .login_register_body .log_reg_from{
+    margin-top: .6rem;
+  }
+  .login_register_body .code_img{
+    width: 3rem;
+  }
+  .bottom_link{
+    width: 20%;
+    margin: 0 auto;
+  }
+  .bottom_link p{
+    color: #fff;
+    display: inline-block;
+    padding-right: .3rem;
+  }
+  .bottom_link img{
+    vertical-align: middle;
+    width: 1rem;
+  }
+  .login_register_btn{
+      position: relative;
+      display: block;
+      width: 72%;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      margin: 2rem auto;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-align: center;
+      color: #fff;
+      font-size: .9rem;
+      background-color: #2d81cc;
+      border-radius: .3rem;
+      opacity: 0.9;
+  }
+
+/*开户页面*/
+  .open_account_bgImg{
+    background-image: url(../images/check_order_bg.png); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  .check_order_btn{
+    width: 7.2rem;
+    height: 2.4em;
+    margin: 13.4rem auto 5rem;
+    color: #2886d6;
+    background-color: #fff;
+    border: .25rem solid #b7def6;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.6rem;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+  }
+  .cross_btn{
+    position: relative;
+    width: 4.4rem;
+    height: 4.4rem;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2.2rem;
+    -webkit-border-radius: 2.2rem;
+    background-color: #fff;
+    box-shadow: 0 .4rem 2rem #2598ce;
+  }
+  .cross_btn span{
+    position: absolute;
+    display: inline-block;
+    width: .3rem;
+    height: 2.1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+    background-color: #2886d6;
+    border-radius: .6rem;
+
+  }
+  .open_account_text{
+    text-align: center;
+    margin-top: .84rem;   
+    color: #fff;
+  }
+  .transform_90{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);   /* IE 9 */
+    -moz-transform:rotate(90deg);  /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 
+  }
+  
+
+/*选号开户*/
+  .choose_city{
+    background-color: #fff;
+  }
+  .choose_div{
+    font-size: .8rem;
+    background-color: #fff;
+    margin-top: 2px;
+  }
+  .choose_div .choose_text{
+    padding: .62rem 0 .62rem .3rem;
+  }
+  .choose_div .choose_btn{
+    margin: .3rem .3rem .3rem 0;
+    color: #666666;
+    border:1px solid #666666;
+    border-radius: .2rem;
+  }
+  .choose_div .selected_btn{
+    color: #2886d6;
+    border:1px solid #2886d6;
+  }
+  .choose_bar{
+    height: 2rem;
+    line-height: 2rem;
+  }
+  
+/*搜索号码框*/
+  .weui_search_bar {
+      position: relative;
+      padding: 8px .8rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      box-sizing: border-box;
+      background-color: #fff;
+  }
+  /* .weui_search_bar:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #C7C7C7;
+    color: #C7C7C7;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  } */
+  .weui_search_outer {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    flex: auto;
+    background-color: #EFEFF4;
+  }
+  .weui_search_inner {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: #EFEFF4;
+    z-index: 1;
+  }
+  .weui_search_inner .weui_icon_search {
+    position: absolute;
+    left: 10px;
+    line-height: 28px;
+  }
+  .weui_icon_search:before {
+    font-family: "myui";
+    color: #B2B2B2;
+    font-size: 14px;
+    content: "\EA0E";
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: inherit;
+    width: 1em;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+  }
+  .weui_search_inner .weui_search_input {
+    padding: 4px 0;
+    width: 100%;
+    height: 1rem;
+    border: 0;
+    font-size: .8rem;
+    line-height: 1rem;
+    box-sizing: content-box;
+    background: #EFEFF4;
+  }
+  .weui_icon_clear {
+    position: absolute;
+    display: none;
+    top: -2px;
+    right: 0;
+    padding: 0 10px;
+    line-height: 28px;
+  }
+  .weui_search_bar.weui_search_focusing .weui_search_text {
+    display: none;
+}
+  .weui_search_text {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    z-index: 2;
+    border-radius: 3px;
+    text-align: center;
+    color: #9B9B9B;
+    background: #FFFFFF;
+  }
+  .weui_search_text .weui_icon_search {
+    margin-right: 5px;
+  }
+  .weui_search_text span {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .weui_search_outer:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    border-radius: 10px;
+    border: 1px solid #E6E6EA;
+    box-sizing: border-box;
+    background: #FFFFFF;
+  }
+  .weui_search_cancel {
+    display: none;
+    font-size: .7rem;
+    margin-left: 10px;
+    padding: 0 .6rem;
+    line-height: 28px;
+    white-space: nowrap;
+    background: #2886d6;
+    color: #fff;
+    border-radius: .15rem;
+  }
+  .weui_search_bar.weui_search_focusing .weui_search_cancel {
+    display: block;
+  }
+  .weui_search_bar:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #C7C7C7;
+    color: #C7C7C7;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+  .phone_num_btn{
+    display: inline-block;
+    width: 45%;
+    height: 1.8rem;
+    float: left;
+    font-size: .8rem;
+    margin: .3rem .3rem;
+    text-align: center;
+    line-height: 1.8rem;
+    border:1px solid #666666;
+    border-radius: .3rem;
+  }
+  .phone_num_selected{
+    border:2px solid #2886d6;
+     background:url(../images/check.png) no-repeat right bottom #FFF; 
+  }
+  .module_title{
+    font-size: .9rem;
+    padding-left: .8rem
+  }
+  .choose_num_list{
+    padding: .4rem .7rem 1rem .7rem; 
+    background:#fff;
+  }
+  .choose_num_list .wxts{
+    margin-top: .7rem;
+    font-size: .6rem;
+    color: #ff8200;
+  }
+  .change_another_text{
+    font-size: .7rem;
+    color: #2886d6
+  }
+  .phone_packages_title{
+    font-size: .8rem; 
+    padding: .4rem 0;
+  }
+  .phone_packages_content{
+    font-size: .6rem;
+    color: #999999;
+    padding-bottom: .4rem;
+  }
+
+/*卡号校验*/
+  .input_card_num{
+    width: 100%;
+    font-size: .8rem;
+    padding: .4rem 0 .4rem .25rem;
+    border:none;
+  }
+
+/*修改认证信息*/
+  .uploading_images_box img{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+/*订单详情*/
+  .orange_title{
+    font-size: .78rem;
+    font-weight: bold;
+    padding-left: .3rem
+  }
+
+/*我的订单*/
+  .file_img{
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .operate_order{
+    width: 3.8rem;
+    padding:.23rem;
+    font-size: .7rem;
+    text-align: center;
+    border:1px solid #666666;
+    border-radius: .2rem;
+    float: right;
+  }
+  .modify_order{
+    margin-right: .4rem;
+    color: #2886d6;
+    border:1px solid #2886d6;
+  }
+  .order_state div{
+    padding: .6rem 0;
+  }
+  .order_state{
+    border-bottom: 1px solid #dddddd;
+  }
+  .selected_border{
+    position: relative;
+    color: #2886d6;
+  }
+  .selected_border:after{
+    position: absolute;
+    content:'';
+    height: 2px;
+    width:90%;
+    background-color: #2886d6;
+    bottom: 0;
+    left: 5%;
+  }
+  .btn_div{
+    margin-top: 1px;
+    padding:.26rem;
+    height: 2rem;
+  }
+  .order_time{
+    color: #999999;
+  }
+
+/*订单详情*/
+  .form_message{
+    padding-top: 3rem;
+  }
+  .form_message >div {
+      padding-top: 1px;
+  }
+  .grap_btn{
+    background-color: #efeff4;
+    color: #666666;
+    border:1px solid #666666;
+  }
+
+  /*border-bottom*/
+  .ui_border{
+    position: relative;
+  }
+
+  .ui_border:after{
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color:#e7e7e7;
+    z-index: 99;
+    -webkit-transform-origin:50% 100%;
+    transform-origin:50% 100%;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui_border:after  {
+      -webkit-transform: scaleY(0.5);
+              transform: scaleY(0.5);
+    }
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui_border:after  {
+      -webkit-transform: scaleY(0.33);
+              transform: scaleY(0.33);
+    }
+  }
+  /*下箭头*/
+  .down_arrow:after{
+    content: "";
+    display: inline-block;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    height: .4rem;
+    width: .4rem;
+    margin-left: .4rem;
+    border-width: .1rem .1rem 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+  }
+  /*上箭头*/
+  .upward_arrow:after{
+    content: "";
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .4rem;
+    width: .4rem;
+    margin-left: .4rem;
+    border-width: .1rem .1rem 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+  }
+
+/*勾选*/
+.checkbox2{position: absolute;left: -999rem;}
+
+.checkbox2 + .hooks_check:before{
+  font-family: "myui";
+  content: '\EA06';
+  color: #C9C9C9;
+  font-size: 1.2rem;
+  display: block;
+  width: 1rem;
+  line-height: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+.checkbox2:checked + .hooks_check:before{
+  font-family: "myui";
+  content: '\EA06';
+  color: #2886d6;
+}
+
+
+.dark_blue{
+  background-color: #2886d6;
+}
+.white{
+  background-color: #fff;
+}
+.flex_son_3{
+  -webkit-flex: 3;
+  flex: 3;
+  display: flex;
+  display: -webkit-flex;      
+}
+.flex_son_y{
+  -webkit-align-items: center;
+  align-items: center;   /*子元素垂直居中*/
+}
+.flex_son_x{
+  justify-content: center; /*水平居中*/
+}
+
+.flex_son_vertical{
+  flex-direction:column;/*子元素的排列方式(垂直向下)*/
+}
+
+.p_top_2_3rem{
+  padding-top: 2.3rem;
+}
+.m_r_pot_6rem{
+  margin-right: .6rem;
+}
+
+.orange_column{
+  height: 1.6rem;
+  width: .4rem;
+  display: inline-block;
+  background-color: orange;
+}
+
+.transparent{  /*背景透明*/
+  background-color: transparent;
+}
+
+.bar img{  /*顶部小图标*/
+      position: absolute;
+      width: 1.4rem;
+      top: .4rem;
+    }
+
+.input_message{
+      width:90%;
+      font-size: .76rem;
+      padding: .3rem 0 .3rem .4rem;
+      border:1px solid #666666;
+      border-radius: .15rem;
+      background: #fff;
+    }
+    .message_name_2{
+      font-size: .75rem;
+      padding: .8rem 0 .8rem .1rem;
+      background: #fff;
+    }
