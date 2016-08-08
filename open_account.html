@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			function pageAdapt() {
+        		var width = document.documentElement.clientWidth < 540 ? document.documentElement.clientWidth : 540;
+        		document.querySelector('html').style.fontSize = 40 * (width / 750) + 'px';
+	    	}
+	    	pageAdapt();
+
+	    	$(".cross_btn").click(function(){
+	    		window.location.href = "chooesnbr.html";
+	    	})
+	    	$('.check_order_btn').click(function(){
+	    		window.location.href = "myOrder.html";
+	    	})	    	
+		})	
+	</script>
+</head>
+<body class="open_account_bgImg">
+	<div class="check_order_btn">
+		查看订单
+	</div>
+	<div class="cross_btn">
+		<span class="x_row transform_90"></span>
+		<span class="y_row"></span>
+	</div>
+	<p class="open_account_text">开户</p>
+</body>
+</html>
